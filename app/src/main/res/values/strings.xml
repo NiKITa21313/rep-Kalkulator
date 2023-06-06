@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
-    <string name="Калькулятор">Калькулятор ё маё</string>
-    <string name="Подсказка_ввода">Введи сюда 1 число чел</string>
-    <string name="Подсказка_ввода2">Введи сюда 2 число чел</string>
+    <string name="logotype">ХАХА просто текст</string>
 </resources>
