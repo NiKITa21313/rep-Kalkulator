@@ -11,11 +11,12 @@
         android:id="@+id/button"
         android:layout_width="170dp"
         android:layout_height="50dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="160dp"
         android:backgroundTint="#FEB200"
         android:text="Next"
         android:textColor="#0C0C0C"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,11 +44,12 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="46dp"
-        android:layout_height="46dp"
+        android:layout_width="87dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="12dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.482"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
