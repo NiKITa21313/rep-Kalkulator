@@ -20,6 +20,6 @@ Button btnMap;
 
     @Override
     public void onClick(View view) {
-        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 57.204080, 88.403015")));
+        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("geo: 55.043998, 82.917408")));
     }
 }
