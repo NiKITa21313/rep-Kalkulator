@@ -18,11 +18,11 @@ import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 TextView timePick;
-Button btnTime, btnData;
+Button btnTime, btnData, btnNext;
 Calendar dateAndTime = Calendar.getInstance();
-    public void showDialog(View v){
-        CustomDialogFragment dialog = new CustomDialogFragment();
-        dialog.show(getSupportFragmentManager(),"custom");
+    public void showDialog(View v) {
+        CustomDialogFragment2 dialog = new CustomDialogFragment2();
+        dialog.show(getSupportFragmentManager(), "custom");
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +31,10 @@ Calendar dateAndTime = Calendar.getInstance();
         timePick = findViewById(R.id.timePick);
         btnTime = findViewById(R.id.buttonTime);
         btnData = findViewById(R.id.buttonData);
+        btnNext = findViewById(R.id.btnNext);
         btnData.setOnClickListener(this);
         btnTime.setOnClickListener(this);
+        btnNext.setOnClickListener(this);
     }
 
     private void setInitialDateTime(){
@@ -54,6 +56,9 @@ Calendar dateAndTime = Calendar.getInstance();
                     dateAndTime.get(Calendar.HOUR_OF_DAY),
                     dateAndTime.get(Calendar.MINUTE), true).show();
         }
+        else if(view.getId() == R.id.btnNext){
+            startActivity(new Intent(this, MainActivity2.class));
+        }
     }
 
     TimePickerDialog.OnTimeSetListener t = new TimePickerDialog.OnTimeSetListener(){
@@ -74,4 +79,5 @@ Calendar dateAndTime = Calendar.getInstance();
             setInitialDateTime();
         }
     };
+
 }
